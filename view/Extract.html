@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+    <title>资金提现</title>
+    <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script type="text/javascript" src="../js/cash.js"></script>
+</head>
+<body>
+<div class="view">
+	<!--header begin-->
+	<header class="header clearfix">
+		<div class="TopL"><span class="Icon icon-back"></span></div>
+		<div class="TopM aligncenter"><span class="block font16">账户提现 </span></div>
+		<div class="TopR"><span class="icon-plus"></span></div>
+	</header>
+	<!--header over-->
+	<!--content begin-->
+	<div class="content" id="wrapper" style="bottom:0;background-color:#f1f1f1;">
+		<div id="scroller">
+			<div class="main">
+				<ul class="Ex_list">
+					<li class="alignright">
+						<span class="color-3 floatleft">账户余额</span>
+						<span><em>5,791,200.34</em>元</span>
+					</li>
+					<li>
+						<span class="color-3 floatleft">提现金额</span>
+						<input type="text" class="Ex_int floatright" value=""/>
+						<i class="Icon ico-clear"></i>
+					</li>
+				</ul>
+				<p class="color-8 mart15">选择提现到账户</p>
+				<ul class="Ex_list list_normal">
+					<li>
+						<span class="color-3">提现到企业银行账户</span>
+						<em class="circle"><i></i></em>
+					</li>
+					<li class="current">
+						<span class="color-3">提现到明道账户余额</span>
+						<em class="circle"><i></i></em>
+					</li>
+				</ul>
+				<p class="color-8 mart15">选择到账方式</p>
+				<ul class="Ex_list list_normal">
+					<li>
+						<span class="color-3">1 个工作日后到账</span>
+						<em class="circle"><i></i></em>
+						<p>当日充值资金，</p>
+						<p>当日即可普通取现额度不限，次数不限。</p>
+						<p>以工作日为标准，</p>
+						<p>15:00之前取现，用户继续享受当天收益；</p>
+						<p>15:00之后取现，还可享受下一工作日收益</p>
+					</li>
+					<li class="current">
+						<span class="color-3">2 个工作日后到账</span>
+						<em class="circle"><i></i></em>
+						<p>当日充值资金，次日才可快速取现</p>
+						<p>正常情况下，单笔上限500万元，</p>
+						<p>月累计上限500万元，每日上限5笔</p>
+						<p>以自然日为标准，</p>
+						<p>15:00之前取现，用户不享受当天收益；</p>
+						<p>15:00之后取现，可享受当天收益</p>
+					</li>
+				</ul>
+				<span class="Btn btn_sure font15 mart15">确认提现</span>
+			</div>
+		</div>
+	</div>
+	<!--content over-->
+<!--支付密码弹出begin-->
+<div class="pop" style="display: ;">
+	<div class="popIn">
+		<form>
+			<p><input type="password" class="Input font14" placeholder="请输入支付密码"></p>
+			<p><input type="number" class="Input mart10 font14" placeholder="请输入短息验证码"></p>
+		</form>
+		<table class="mart10" style="width:100%;">
+			<tr>
+				<th class="color-a"><span class="block marr10">我们已向您发送短信验证码，请耐心等候。</span></th>
+				<td class="alignright">
+					<span class="Btn btn_sure send">确认发送</span>
+					<span class="Btn btn_sure send no_touch" style="display:none;">60秒后可重发</span>
+				</td>
+			</tr>
+		</table>
+		<ul class="pop_btn clearfix">
+			<li>取消</li>
+			<li>确定</li>
+		</ul>
+	</div>
+</div>
+<!--支付密码弹出over-->	
+</div>
+<div class="mask" style="display:block;"></div><!--最上层的放置点击遮罩层 加 maskOverbg就变成了全透明的-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+    <title>资金明细</title>
+    <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script type="text/javascript" src="../js/cash.js"></script>
+</head>
+<body>
+<div class="view">
+	<!--下拉菜单 begin-->
+	<div class="navbar show">
+		<table>
+			<tr>
+				<td>
+					<i class="Icon ico-01"></i>
+					<span>资金明细</span>
+				</td>
+				<td>
+					<i class="Icon ico-02"></i>
+					<span>待复核</span>
+				</td>
+				<td>
+					<i class="Icon ico-03"></i>
+					<span>收益</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<i class="Icon ico-04"></i>
+					<span>充值</span>
+				</td>
+				<td>
+					<i class="Icon ico-05"></i>
+					<span>提现</span>
+				</td>
+				<td>
+					<i class="Icon ico-06"></i>
+					<span>购买</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!--下拉菜单 over-->
+	<!--header begin-->
+	<header class="header clearfix">
+		<div class="TopL"><span class="icon-arrow-left"></span></div>
+		<div class="TopM aligncenter current"><span class="block font16">资金明细 <i class="icon-arrow"></i></span></div>
+		<div class="TopR"></div>
+	</header>
+	<!--header over-->
+	<!--content begin-->
+	<div class="content" id="wrapper">
+		<div id="scroller">
+			
+		</div>
+	</div>
+	<!--content over-->
+	<!--footer begin-->
+	<footer class="footer clearfix">
+		<span>
+			<i class="Icon ico_uesr"></i>
+			<em>我的账户</em>
+		</span>
+		<span class="current">
+			<i class="Icon ico_tails"></i>
+			<em>资金明细</em>
+		</span>
+	</footer>
+	<!--footer over-->
+</div>
+<div class="mask" style="opacity:0.5;display:none;"></div>
+<div class="maskOver" style="display:block;"></div><!--露出header的遮罩层-->
+</body>
+</html>
