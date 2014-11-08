@@ -8,8 +8,41 @@
     <title>企业理财</title>
     <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
 	<script type="text/javascript" src="../js/jquery.js"></script>
-	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<!--<script type="text/javascript" src="../js/iscroll.js"></script>-->
+	<script type="text/javascript" src="js/update.js" ></script>
 	<script type="text/javascript" src="../js/cash.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	//取消浏览器的所有事件，使得active的样式在手机上正常生效
+	document.addEventListener( "touchstart", function(e) {
+	    return false;
+	}, true );
+	// 禁止选择
+	document.oncontextmenu = function(){
+		return false;
+	};
+	// H5 plus事件处理
+	document.addEventListener( "plusready", function() {
+		plus.ui.getSelfWindow().addEventListener( "back", function(){
+		// Android处理返回键
+			if ( confirm("确认退出？") ) {
+				plus.runtime.quit();
+			}
+		}, false );
+		// iOS平台使用滚动的div
+		if ( "iOS" == plus.os.name ) {
+			document.getElementById("content").className = "scontent";
+		}
+		plus.ui.closeSplashscreen();
+	}, false );
+	// 处理点击事件
+	function clicked( id ) {
+		if ( window.plus ) {
+			plus.ui.createWindow( id, {name:id} ).show( "slide-in-right", 300 );
+		} else {
+			window.open( id );
+		}
+	}
+	</script>
 </head>
 <body>
 <div class="view">
@@ -30,7 +63,7 @@
 			<section class="assets mart20 marl20 marr20">
 				<p class="alignright clearfix">
 					<span class="font14 floatleft">账户总资产（元）</span>
-					<span class="Btn Extract font14">提 现</span>
+					<span class="Btn Extract font14" id="Extract" onclick="clicked('Extract.html')">提 现</span>
 				</p>
 				<p class="font35 mart15">5,791,200.34</p>
 			</section>
@@ -73,23 +106,6 @@
 	</footer>
 	<!--footer over-->
 </div>
-<!--提示更新 begin-->
-<div class="choosenet update" style="display:none;">
-	<div class="choosenetin">
-		<p class="font14">目前有新版本，是否升级？</p>
-		<p>最新版本：v1.01</p>
-		<p>更新内容</p>
-		<p>1、优化界面显示</p>
-		<p>2、修复列表BUG</p>
-		<p>3、优化界面加载速度</p>
-		<p>4、新增提示效果</p>
-	</div>
-	<p class="bottomB font14 clearfix">
-		<span class="quitBtn aligncenter">取&nbsp;&nbsp;&nbsp;消</span>
-		<span class="quitBtn aligncenter current">确&nbsp;&nbsp;&nbsp;定</span>
-	</p>
-</div>
-<!--提示更新 over-->
 <div class="mask" style="opacity:0.5;display:none;"></div>
 <div class="maskOver" style="display:none;"></div><!--最上层的放置点击遮罩层-->
 </body>

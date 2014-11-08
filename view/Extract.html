@@ -15,7 +15,7 @@
 <div class="view">
 	<!--header begin-->
 	<header class="header clearfix">
-		<div class="TopL"><span class="Icon icon-back"></span></div>
+		<div class="TopL"><span class="Icon icon-back" onclick="back();"></span></div>
 		<div class="TopM aligncenter"><span class="block font16">账户提现 </span></div>
 		<div class="TopR"><span class="icon-plus"></span></div>
 	</header>
@@ -74,7 +74,7 @@
 	</div>
 	<!--content over-->
 <!--支付密码弹出begin-->
-<div class="pop" style="display: ;">
+<div class="pop" style="display:none;">
 	<div class="popIn">
 		<form>
 			<p><input type="password" class="Input font14" placeholder="请输入支付密码"></p>
@@ -97,7 +97,7 @@
 </div>
 <!--支付密码弹出over-->	
 </div>
-<div class="mask" style="display:block;"></div><!--最上层的放置点击遮罩层 加 maskOverbg就变成了全透明的-->
+<div class="mask" style="display:none;"></div><!--最上层的放置点击遮罩层 加 maskOverbg就变成了全透明的-->
 </body>
 </html>
 
