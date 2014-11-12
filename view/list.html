@@ -13,49 +13,48 @@
 </head>
 <body>
 <div class="view">
-	<!--下拉菜单 begin-->
-	<div class="navbar">
-		<table>
-			<tr>
-				<td>
-					<i class="Icon ico-01"></i>
-					<span>资金明细</span>
-				</td>
-				<td>
-					<i class="Icon ico-02"></i>
-					<span>待复核</span>
-				</td>
-				<td>
-					<i class="Icon ico-03"></i>
-					<span>收益</span>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<i class="Icon ico-04"></i>
-					<span>充值</span>
-				</td>
-				<td>
-					<i class="Icon ico-05"></i>
-					<span>提现</span>
-				</td>
-				<td>
-					<i class="Icon ico-06"></i>
-					<span>购买</span>
-				</td>
-			</tr>
-		</table>
-	</div>
-	<!--下拉菜单 over-->
 	<!--header begin-->
 	<header class="header clearfix">
-		<div class="TopL"><span class="icon-arrow-left"></span></div>
-		<div class="TopM aligncenter" id="show_nav"><span class="block font16">资金明细 <i class="icon-arrow"></i></span></div>
+		<div class="TopL"><span class="Icon icon-back"></span></div>
+		<div class="TopM aligncenter" id="show_nav"><span class="block font16">公司账单</div>
 		<div class="TopR"></div>
 	</header>
 	<!--header over-->
+	<!--检索菜单begin-->
+	<section class="navbar"><!--显示下拉菜单加show-->
+		<ul class="nav_list">
+			<li class="current">全部</li>
+			<li>进行中</li>
+			<li>未完成</li>
+		</ul>
+		<table>
+			<tr>
+				<td>
+					<span>全部</span>
+				</td>
+				<td>
+					<span>充值</span>
+				</td>
+				<td>
+					<span>提现</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>购买</span>
+				</td>
+				<td>
+					<span>收益</span>
+				</td>
+				<td>
+					<span></span>
+				</td>
+			</tr>
+		</table>
+	</section>
+	<!--检索菜单over-->
 	<!--content begin-->
-	<div class="content" id="wrapper">
+	<div class="content" id="wrapper" style="top:83px;">
 		<div id="scroller">
 			<ul class="deta_list">
 				<li class="current">
@@ -67,8 +66,8 @@
 						</p>
 					</div>
 					<div class="side_btn aligncenter">
-						<i class="Icon ico-09" title="撤销"></i>
-						<i class="Icon ico-10" title="确认"></i>
+						<i class="Icon" title="撤销">驳回</i>
+						<i class="Icon" title="确认">通过</i>
 					</div>
 				</li>
 				<li>
@@ -80,9 +79,15 @@
 							<span class="color-3">+1,000,00</span>
 						</p>
 					</div>
-					<div class="side_btn aligncenter">
-						<i class="Icon ico-09" title="撤销"></i>
-						<i class="Icon ico-10" title="确认"></i>
+				</li>
+				<li>
+					<div class="deta_in">
+						<i class="Icon ico-new"></i>
+						<p class="color-6 font18">充值</p>
+						<p class="font18 alignright">
+							<span class="font12 color-a floatleft">2014-10-01</span>
+							<span class="color-3">+1,000,00</span>
+						</p>
 					</div>
 				</li>
 				<li>
@@ -94,10 +99,6 @@
 							<span class="color-3">+1,000,00</span>
 						</p>
 					</div>
-					<div class="side_btn aligncenter">
-						<i class="Icon ico-09" title="撤销"></i>
-						<i class="Icon ico-10" title="确认"></i>
-					</div>
 				</li>
 				<li>
 					<div class="deta_in">
@@ -108,23 +109,14 @@
 							<span class="color-3">+1,000,00</span>
 						</p>
 					</div>
-					<div class="side_btn aligncenter">
-						<i class="Icon ico-09" title="撤销"></i>
-						<i class="Icon ico-10" title="确认"></i>
-					</div>
 				</li>
 				<li>
 					<div class="deta_in">
-						<i class="Icon ico-new"></i>
-						<p class="color-6 font18">充值</p>
+						<p class="color-6 font18">购买 - 明道25人包</p>
 						<p class="font18 alignright">
 							<span class="font12 color-a floatleft">2014-10-01</span>
 							<span class="color-3">+1,000,00</span>
 						</p>
-					</div>
-					<div class="side_btn aligncenter">
-						<i class="Icon ico-09" title="撤销"></i>
-						<i class="Icon ico-10" title="确认"></i>
 					</div>
 				</li>
 				<li>
@@ -135,9 +127,14 @@
 							<span class="color-3">+1,000,00</span>
 						</p>
 					</div>
-					<div class="side_btn aligncenter">
-						<i class="Icon ico-09" title="撤销"></i>
-						<i class="Icon ico-10" title="确认"></i>
+				</li>
+				<li>
+					<div class="deta_in">
+						<p class="color-6 font18">购买 - 明道25人包</p>
+						<p class="font18 alignright">
+							<span class="font12 color-a floatleft">2014-10-01</span>
+							<span class="color-3">+1,000,00</span>
+						</p>
 					</div>
 				</li>
 				<li>
@@ -148,10 +145,6 @@
 							<span class="color-3">+1,000,00</span>
 						</p>
 					</div>
-					<div class="side_btn aligncenter">
-						<i class="Icon ico-09" title="撤销"></i>
-						<i class="Icon ico-10" title="确认"></i>
-					</div>
 				</li>
 				<li>
 					<div class="deta_in">
@@ -160,36 +153,6 @@
 							<span class="font12 color-a floatleft">2014-10-01</span>
 							<span class="color-3">+1,000,00</span>
 						</p>
-					</div>
-					<div class="side_btn aligncenter">
-						<i class="Icon ico-09" title="撤销"></i>
-						<i class="Icon ico-10" title="确认"></i>
-					</div>
-				</li>
-				<li>
-					<div class="deta_in">
-						<p class="color-6 font18">购买 - 明道25人包</p>
-						<p class="font18 alignright">
-							<span class="font12 color-a floatleft">2014-10-01</span>
-							<span class="color-3">+1,000,00</span>
-						</p>
-					</div>
-					<div class="side_btn aligncenter">
-						<i class="Icon ico-09" title="撤销"></i>
-						<i class="Icon ico-10" title="确认"></i>
-					</div>
-				</li>
-				<li>
-					<div class="deta_in">
-						<p class="color-6 font18">购买 - 明道25人包</p>
-						<p class="font18 alignright">
-							<span class="font12 color-a floatleft">2014-10-01</span>
-							<span class="color-3">+1,000,00</span>
-						</p>
-					</div>
-					<div class="side_btn aligncenter">
-						<i class="Icon ico-09" title="撤销"></i>
-						<i class="Icon ico-10" title="确认"></i>
 					</div>
 				</li>
 			</ul>
@@ -197,7 +160,7 @@
 	</div>
 	<!--content over-->
 	<!--footer begin-->
-	<footer class="footer clearfix">
+	<footer class="footer clearfix" style="display: none;">
 		<span>
 			<i class="Icon ico_uesr"></i>
 			<em>我的账户</em>
@@ -209,10 +172,10 @@
 	</footer>
 	<!--footer over-->
 </div>
-<div class="mask" style="opacity:0.5;display:block;"></div>
+<div class="mask" style="opacity:0.5;display:none;"></div>
 <div class="maskOver" style="display:none;"></div><!--露出header的遮罩层-->
 <!--撤销交易弹出begin-->
-<div class="pop" style="display:;">
+<div class="pop" style="display:none;">
 	<div class="popIn">
 		<p class="p-top20 p-bt20 aligncenter font14 color-3">您确定要撤销当前交易？</p>
 		<ul class="pop_btn clearfix">

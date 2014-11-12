@@ -8,41 +8,9 @@
     <title>企业理财</title>
     <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
 	<script type="text/javascript" src="../js/jquery.js"></script>
-	<!--<script type="text/javascript" src="../js/iscroll.js"></script>-->
+	<script type="text/javascript" src="../js/iscroll.js"></script>
 	<script type="text/javascript" src="js/update.js" ></script>
 	<script type="text/javascript" src="../js/cash.js"></script>
-	<script type="text/javascript" charset="utf-8">
-	//取消浏览器的所有事件，使得active的样式在手机上正常生效
-	document.addEventListener( "touchstart", function(e) {
-	    return false;
-	}, true );
-	// 禁止选择
-	document.oncontextmenu = function(){
-		return false;
-	};
-	// H5 plus事件处理
-	document.addEventListener( "plusready", function() {
-		plus.ui.getSelfWindow().addEventListener( "back", function(){
-		// Android处理返回键
-			if ( confirm("确认退出？") ) {
-				plus.runtime.quit();
-			}
-		}, false );
-		// iOS平台使用滚动的div
-		if ( "iOS" == plus.os.name ) {
-			document.getElementById("content").className = "scontent";
-		}
-		plus.ui.closeSplashscreen();
-	}, false );
-	// 处理点击事件
-	function clicked( id ) {
-		if ( window.plus ) {
-			plus.ui.createWindow( id, {name:id} ).show( "slide-in-right", 300 );
-		} else {
-			window.open( id );
-		}
-	}
-	</script>
 </head>
 <body>
 <div class="view">
@@ -50,7 +18,7 @@
 	<header class="header clearfix">
 		<div class="TopL"><span class="icon-arrow-left"></span></div>
 		<div class="TopM aligncenter"><span class="block font16">企业理财 </span></div>
-		<div class="TopR"></div>
+		<div class="TopR"><span class="block bill">账单</span></div>
 	</header>
 	<!--header over-->
 	<!--content begin-->
@@ -94,7 +62,7 @@
 	</div>
 	<!--content over-->
 	<!--footer begin-->
-	<footer class="footer clearfix">
+	<footer class="footer clearfix" style="display: none;">
 		<span class="current">
 			<i class="Icon ico_uesr"></i>
 			<em>我的账户</em>

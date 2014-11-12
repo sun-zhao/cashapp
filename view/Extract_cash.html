@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+    <title>提现</title>
+    <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script type="text/javascript" src="../js/cash.js"></script>
+</head>
+<body>
+<div class="view">
+	<!--header begin-->
+	<header class="header clearfix">
+		<div class="TopL"><span class="Icon icon-back"></span></div>
+		<div class="TopM aligncenter" id="show_nav"><span class="block font16">账户提现</div>
+		<div class="TopR"></div>
+	</header>
+	<!--header over-->
+	<!--content begin-->
+	<div class="content" id="wrapper">
+		<div id="scroller">
+			<div class="receipt_top nobg">
+				<p>
+					<span>提现金额</span>
+					<span class="color-3">2,500.00</span>
+				</p>
+				<p>
+					<span>提现到账户</span>
+					<span class="color-3">提现到明道账户余额</span>
+				</p>
+				<p>
+					<span>到账方式</span>
+					<span class="color-3">2小时到账</span>
+				</p>
+			</div>
+			<table class="mart10 Extract_tab">
+				<tr>
+					<td colspan="2">
+						<input type="password" class="Input font14" placeholder="请输入支付密码">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="number" class="Input font14" placeholder="请输入短息验证码">
+					</td>
+					<td class="alignright">
+						<span class="Btn btn_sure marl20 send">确认发送</span>
+						<span class="Btn btn_sure send marl20 no_touch" style="display:none;">60秒后可重发</span>
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2" class="color-a"><span class="block">我们已向您发送短信验证码，请耐心等候。</span></th>
+				</tr>
+				<tr><td colspan="2" class="p-top80"><span class="Btn btn_sure font15 mart15">确认提现</span></td></tr>
+			</table>
+			
+		</div>
+	</div>
+	<!--content over-->
+</div>
+<div class="mask" style="opacity:0.5;display:none;"></div>
+<div class="maskOver" style="display:none;"></div><!--露出header的遮罩层-->
+<!--撤销交易弹出begin-->
+<div class="pop" style="display:none;">
+	<div class="popIn">
+		<p class="p-top20 p-bt20 aligncenter font14 color-3">您确定要撤销当前交易？</p>
+		<ul class="pop_btn clearfix">
+			<li>取消</li>
+			<li class="active">确定</li>
+		</ul>
+	</div>
+</div>
+<!--撤销交易弹出over-->	
+</body>
+</html>

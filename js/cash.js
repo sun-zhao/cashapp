@@ -3,14 +3,14 @@ $(document).ready(function(){
 	myScroll = new IScroll('#wrapper', { mouseWheel: true });
 	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 	var $navbar = $('.navbar');//top下划出来的nav
-	var $show_nav = $('#show_nav');//点击出现navbar的锚点
+	var $show_nav = $('.nav_list li');//点击出现navbar的锚点
 	var $mask = $('.mask');//完全遮罩层
 	var $maskOver = $('.maskOver');//露出顶部header的遮罩层
 	$show_nav.off('touchstart').on('touchstart',function(){
 		var $this = $(this);
 		if(!$this.hasClass('current')){
 			$maskOver.stop().fadeIn();
-			$this.addClass('current');
+			$this.addClass('current').siblings().removeClass('current');
 			$navbar.addClass('show');
 
 		}else{

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+    <title>回执单</title>
+    <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script type="text/javascript" src="../js/cash.js"></script>
+</head>
+<body>
+<div class="view">
+	<!--header begin-->
+	<header class="header clearfix">
+		<div class="TopL"><span class="Icon icon-back"></span></div>
+		<div class="TopM aligncenter" id="show_nav"><span class="block font16">公司账单</div>
+		<div class="TopR"></div>
+	</header>
+	<!--header over-->
+	<!--content begin-->
+	<div class="content" id="wrapper" style="bottom:50px;">
+		<div id="scroller">
+			<div class="receipt_top">
+				<p>
+					<span>交易状态</span>
+					<span class="color-info">正在交易</span>
+				</p>
+				<p>
+					<span>付款状态</span>
+					<span class="color-success">成功</span>
+				</p>
+				<p>
+					<span>交易时间</span>
+					<span>2014-11-11 17:34</span>
+				</p>
+			</div>
+			<div class="receipt_mid">
+				<p class="color-9">收益转账</p>
+				<p class="alignright color-9">人民币</p>
+				<p class="alignright color-3 font30 mart10">+3,5000.00</p>
+				<p class="alignright color-4 mart5 font18">叁万伍仟</p>
+			</div>
+			<div class="receipt_mid color-3">
+				<p class="color-9">付款账户</p>
+				<p class="mart5">汇添富基金管理股份有限公司</p>
+				<p>123544365546546754</p>
+				<p>招商银行北京崇文门支行</p>
+			</div>
+			<div class="receipt_mid color-3">
+				<p>
+					<span class="color-9">基金类型</span>
+					<span>货币基金</span>
+				</p>
+				<p class="mart5">
+					<span class="color-9">产品名称</span>
+					<span>汇添富现金宝货币</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--content over-->
+	<!--footer begin-->
+	<footer class="footer receipt_bt alignright clearfix">
+		<span>驳&nbsp;&nbsp;&nbsp;回</span>
+		<span>付 &nbsp;&nbsp;&nbsp;款</span>
+	</footer>
+	<!--footer over-->
+</div>
+<div class="mask" style="opacity:0.5;display:none;"></div>
+<div class="maskOver" style="display:none;"></div><!--露出header的遮罩层-->
+<!--撤销交易弹出begin-->
+<div class="pop" style="display:none;">
+	<div class="popIn">
+		<p class="p-top20 p-bt20 aligncenter font14 color-3">您确定要撤销当前交易？</p>
+		<ul class="pop_btn clearfix">
+			<li>取消</li>
+			<li class="active">确定</li>
+		</ul>
+	</div>
+</div>
+<!--撤销交易弹出over-->	
+</body>
+</html>
