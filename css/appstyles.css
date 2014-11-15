@@ -123,7 +123,8 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .ico-new{width:10px;height:15px;background-image: url(../img/new.png);position: absolute;;left:2px;top:0;}
 .bill{width:42px;height: 21px;line-height:21px;background-image: url(../img/btn-bg.png);background-size: 100% auto;color:#fff;position:relative;top:12px;font-size:11px;}
 
-
+.loading{width:130px;height:30px;line-height:30px;background:url(../img/mask.png) repeat;position:fixed;left:50%;top:50%;margin:-15px 0 0 -65px;z-index:40;border-radius:4px;-webkit-border-radius:4px;color:#fff;}
+.loading img{vertical-align:-3px;margin:0 3px;}
 .mask,.maskOver{background-color:#000;opacity:0.5;position:fixed;top:0;left:0;bottom:0;right:0;z-index:50;display:none;}
 .maskOver{top:44px;z-index:30;}
 .maskOverbg{background:0;opacity:1;overflow:hidden;}
