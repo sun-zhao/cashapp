@@ -45,7 +45,7 @@
                     cxt.lineTo(_PointLocationArr[pointIndex].X, _PointLocationArr[pointIndex].Y);
                 }
                 cxt.lineWidth = 10;
-                cxt.strokeStyle = "#627eed";
+                cxt.strokeStyle = "#627eed";//线条颜色
                 cxt.stroke();
                 cxt.closePath();
                 if(touchPoint!=null)
@@ -61,19 +61,19 @@
             }
             for (var i = 0; i < _PointLocationArr.length; i++) {
                 var Point = _PointLocationArr[i];
-                cxt.fillStyle = "#627eed";
+                cxt.fillStyle = "#627eed";//圆圈边框颜色
                 cxt.beginPath();
                 cxt.arc(Point.X, Point.Y, R, 0, Math.PI * 2, true);
                 cxt.closePath();
                 cxt.fill();
-                cxt.fillStyle = "#1e202d";
+                cxt.fillStyle = "#1e202d";//圆圈背景色
                 cxt.beginPath();
                 cxt.arc(Point.X, Point.Y, R - 3, 0, Math.PI * 2, true);
                 cxt.closePath();
                 cxt.fill();
                 if(_LinePointArr.indexOf(i)>=0)
                 {
-                    cxt.fillStyle = "#627eed";
+                    cxt.fillStyle = "#627eed";//圈里面的圆点颜色
                     cxt.beginPath();
                     cxt.arc(Point.X, Point.Y, R -16, 0, Math.PI * 2, true);
                     cxt.closePath();
@@ -120,24 +120,14 @@
 <div class="view password_page">
 	<!--content begin-->
 	<div class="content" style="top:0;">
-		<table class="layout">
-			<tr>
-				<td class="aligncenter">
-					<span class="use_img"><img src="../img/1.png"></span>
-					<p class="color-white">行走江湖</p>
-					<p class="font14">再次绘制解锁图案</p>
-					<p class="font14 color-error" style="display:none;">密码错误，您还有3次输入机会</p>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<!--错误加 touch_error-->
-						<canvas id="myCanvas"></canvas>
-
-				</td>
-			</tr>
-			<tr><td class="aligncenter"><span>忘记手势密码？</span></td></tr>
-		</table>
+		<div class="aligncenter p-top40 p-bt20">
+			<span class="use_img"><img src="../img/1.png"></span>
+			<p class="color-white">行走江湖</p>
+			<p class="font14">再次绘制解锁图案</p>
+			<p class="font14 color-error" style="display:none;">密码错误，您还有3次输入机会</p>
+		</div>
+		<canvas id="myCanvas"></canvas>
+		<p class="aligncenter p-top30"><span>忘记手势密码？</span></p>
 	</div>
 	<!--content over-->
 </div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+    <title>设置</title>
+    <link rel="stylesheet" type="text/css" href="../css/appstyles.css">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script type="text/javascript" src="../js/cash.js"></script>
+</head>
+<body>
+<div class="view">
+	<!--header begin-->
+	<header class="header clearfix">
+		<div class="TopL"><span class="Icon icon-back"></span></div>
+		<div class="TopM aligncenter" id="show_nav"><span class="block font16">设置</div>
+		<div class="TopR"></div>
+	</header>
+	<!--header over-->
+	<!--content begin-->
+	<div class="content">
+		<ul class="set_list mart15">
+			<li>
+				<div class="list_in">管理权限</div>
+			</li>
+			<li>
+				<div class="list_in">限额</div>
+			</li>
+			<li>
+				<div class="list_in clearfix">
+					<span>支付安全</span>
+					<span class="waring floatright">未设置</span>
+				</div>
+			</li>
+			<li class="mart25 aligncenter">
+				<div class="list_in nobgimg nopadding">切换网络</div>
+			</li>
+			<li class="aligncenter">
+				<div class="list_in login_out nobgimg nopadding">退出登录</div>
+			</li>
+		</ul>
+	</div>
+	<!--content over-->
+	<!--支付密码弹出begin-->
+	<div class="pop" style="display:;" title="已经改成单独页面了！">
+		<div class="popIn">
+			<p class="aligncenter font14 color-3">验证旧密码</p>
+			<p class="aligncenter color-6 mart5">为保障数据安全，修改密码前请先验证旧密码</p>
+			<form class="mart20">
+				<p><input type="password" class="Input font14" placeholder="请输入原旧密码"></p>
+			</form>
+			<ul class="pop_btn clearfix">
+				<li>取消</li>
+				<li class="active">确定</li>
+			</ul>
+		</div>
+	</div>
+	<!--支付密码弹出over-->	
+</div>
+<div class="mask" style="display:block;"></div>
+</body>
+</html>
