@@ -177,7 +177,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 /*下拉功能菜单*/
 .navbar{width:100%;height:38px;left:0;top:44px;position:absolute;border-bottom:1px solid #ccc;z-index:35;}
 .nav_list{height:28px;padding:5px 4px;background:#ededed;position:relative;z-index:40;}
-.nav_list li{float: left;width:32.9%;text-align:center;line-height:28px;color:#007aff;background-color:#fff;background-image:url(../img/arrow_h.png);background-repeat: no-repeat;background-position: 90% center;background-size:9px;border:1px solid #007aff;border-width:1px 0;}
+.nav_list li{float: left;width:32.9%;text-align:center;line-height:28px;color:#007aff;background-color:#fff;background-repeat: no-repeat;background-position: 90% center;background-size:9px;border:1px solid #007aff;border-width:1px 0;}
 .nav_list li:nth-child(1){border-left:1px solid #007aff;border-radius:3px 0 0 3px;-webkit-border-radius:3px 0 0 3px;}
 .nav_list li:nth-child(2){border-left:1px solid #007aff;border-right:1px solid #007aff;}
 .nav_list li:nth-child(3){border-right:1px solid #007aff;border-radius:0 3px 3px 0;-webkit-border-radius:0 3px 3px 0;}
@@ -207,6 +207,8 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .deta_list li.current .deta_in{margin-right:110px;transition:0.3s;-webkit-transition:0.3s;}
 .deta_list li .side_btn .Icon{width:48%;font-size:1.3rem;height:50px;line-height:50px;color:#fff;}
 .deta_list li .side_btn .Icon:first-child{background-color:#c2c1c5;}
+.plus{color:#53a000;}
+.minus{color:#eb6100;}
 /*收益明细*/
 .Profit{background:#e5e5e5;}
 .Profit_list{padding:10px 20px;}
