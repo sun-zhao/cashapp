@@ -208,7 +208,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .deta_list li .side_btn .Icon:first-child{background-color:#c2c1c5;}
 /*收益明细*/
 .Profit{background:#e5e5e5;}
-.Profit_list{padding:20px;}
+.Profit_list{padding:10px 20px;}
 .Profit_list li{display:block;height:30px;line-height:30px;background:#fff;margin:8px 0;}
 .Profit_list li .scroll{background-color:#999;height:30px;line-height:30px;min-width:50%;overflow:hidden;transition:0.3s;-webkit-transition:0.3s;}
 .Profit_list li .scroll span{display:inline-block;height:30px;line-height:30px;color:#fff;}
