@@ -107,6 +107,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 .clearfix{zoom:1}
 .Icon{display:inline-block;font-size:0;line-height:0;background-repeat:no-repeat;background-size:100%;}
+.icon-set{width:40%;height:100%;background:url(../img/ico-set.png);background-size:100% auto;background-repeat: no-repeat;background-position: center;max-width:30px;}
 .ico_uesr,.ico_tails{width:13.1%;display:block;margin:0 auto;}
 .ico_uesr{background-image: url(../img/ico_1.png);}
 .ico_tails{background-image: url(../img/ico_2.png);}
@@ -122,8 +123,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .current .circle{border:1px solid #347cdc;}
 .current .circle i{display: inline-block;transition:0.3s;-webkit-transition:0.3s;}
 .ico-new{width:10px;height:15px;background-image: url(../img/new.png);position: absolute;;left:2px;top:0;}
-.bill{width:42px;height: 21px;line-height:21px;background-image: url(../img/btn-bg.png);background-size: 100% auto;color:#fff;position:relative;top:12px;font-size:11px;}
-
+.bill{width:100%;padding:5px 0;line-height:normal;background-size: 100% auto;color:#fff;background-repeat:no-repeat;position:relative;top:11px;font-size:11px;margin-left:-10px;box-shadow:0 0 3px #000;border-radius:2px;-webkit-border-radius:2px;}
 .loading{width:130px;height:30px;line-height:30px;background:url(../img/mask.png) repeat;position:fixed;left:50%;top:50%;margin:-15px 0 0 -65px;z-index:40;border-radius:4px;-webkit-border-radius:4px;color:#fff;}
 .loading img,.refresh img{vertical-align:-3px;margin:0 3px;}
 .refresh{margin:-25px 0 5px 0;}
@@ -169,6 +169,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .Ex_list li em{color:#414c8e;padding-right:4px;}
 .Ex_int,.Input{height:44px;line-height:normal;border:1px;outline:none;width:60%;color:#888;font-size:13px;appearance:none;-webkit-appearance:none;}
 .Input{border:1px solid #c3c3c3;border-radius:3px;width:100%;text-indent:10px;color:#888;background:#fff;}
+.no_input{border-color:#fff;color:#ccc;}
 .list_normal li{margin:-1px 0 0 0;}
 .list_normal li:first-child{border-radius:4px 4px 0 0;margin-top:9px;}
 .list_normal li:last-child{border-radius:0 0 4px 4px;}
