@@ -133,8 +133,14 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .Btn{display:inline-block;color:#fff;border-radius:4px;text-align: center;}
 .Extract{background-color:#ff6e00;border:1px solid #ed6702;line-height:27px;height:27px;padding:0 18px;margin-top:-5px;}
 .btn_sure{display:block;background-color:#347cdc;height:48px;line-height:48px;border:1px solid #2d6bbd;}
+.btn_veto{background-color:#666;}
 .send{display:inline-block;height:35px;line-height:35px;width:90px;}
 .no_touch{background-color:#d8d8d8;border-color:#c6c5c5;color:#959595;}
+.splash{position:absolute;top:0;left:0;right:0;bottom:0;background: url(../img/wait_bg.jpg) no-repeat;background-size:100% auto;z-index: 100;}
+.logo{display: block;width:34%;position:absolute;left:50%;margin-left:-17%;top:30%;}
+.logo img{width:100%;}
+.company{width:100%;position:absolute;bottom:20px;left:0;right:0;}
+.opening{background:#f1f1f1;}
 
 .view{width:100%;height:100%;position:relative;}
 .header,.footer{background-color:#1c1e2a;color:#fff;position:fixed;left: 0;right:0;z-index:50;}
@@ -146,7 +152,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .footer{height:49px;bottom:0;color:#4c506b;z-index:20;}
 .footer span{display:inline-block;width:50%;float:left;height:41px;padding-top:8px;text-align: center;font-size:10px;}
 .footer span.current{background-color:#0e0f15;color:#59a7f9;}
-.content{position:absolute;top:44px;bottom:0;left:0;right:0;overflow:hidden;background:#f1f1f1;}
+.content{position:absolute;top:44px;bottom:0;left:0;right:0;overflow:hidden;background:#ededed;}
 .Income{width:100%;height:170px;color:#fff;background:-webkit-gradient(linear,0 0,100% 100%,from(#57a1f0),to(#3277d3));}
 .Income p{line-height:60px;padding-left:20px;}
 .Income p.font90{line-height:90px;padding-left:13px;text-shadow:0 0 1px #888;}
@@ -175,16 +181,22 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .pop_btn li:last-child{border-left:1px solid #ddd;width:50%;font-size:14px;color:#666;margin-left:0;}
 .pop_btn li.active{background-color:#347cdc;color:#fff;}
 /*下拉功能菜单*/
-.navbar{width:100%;height:38px;left:0;top:44px;position:absolute;border-bottom:1px solid #ccc;z-index:35;}
+.navbar{width:100%;height:38px;left:0;top:44px;position:absolute;z-index:35;}
 .nav_list{height:28px;padding:5px 4px;background:#ededed;position:relative;z-index:40;}
 .nav_list li{float: left;width:32.9%;text-align:center;line-height:28px;color:#007aff;background-color:#fff;background-repeat: no-repeat;background-position: 90% center;background-size:9px;border:1px solid #007aff;border-width:1px 0;}
 .nav_list li:nth-child(1){border-left:1px solid #007aff;border-radius:3px 0 0 3px;-webkit-border-radius:3px 0 0 3px;}
 .nav_list li:nth-child(2){border-left:1px solid #007aff;border-right:1px solid #007aff;}
 .nav_list li:nth-child(3){border-right:1px solid #007aff;border-radius:0 3px 3px 0;-webkit-border-radius:0 3px 3px 0;}
-.nav_list li.current{background-color:#007aff;color:#fff;background-image:url(../img/arrow.png);}
+.nav_list li.current,.nav_list li.bg{background-color:#007aff;color:#fff;}
 .navbar table{width:100%;position: absolute;left:0;transition:0.2s;-webkit-transition:0.2s;top:-90px;z-index:10;}
 .navbar table td{border:1px solid #e9e9e9;width:33%;height:45px;color:#333;font-size:13px;text-align: center;background:#fff;}
 .navbar.show table{transition:0.2s;-webkit-transition:0.2s;top:39px;}
+.navbar table td span{display:block;height:45px;line-height:45px;position: relative;}
+.navbar table td span em,.nav_list li em{display: none;width:20px;height:20px;background: url(../img/ico_11.png); background-size:20px;position:absolute;top:-1px;right:-1px;}
+.nav_list li em{position:relative;width:10px;height:7px;display:inline-block;background: url(../img/arrow.png); background-size:10px;background-repeat:no-repeat;float:right;margin-right:10px;position:relative;top:12px;}
+.navbar table td span.current em,.nav_list li.bg em{display:inline-block;}
+.nav_list li.current em{transform:rotate(180deg);transition:0.3s;-webkit-transition:0.3s;top:10px;}
+.makesure{background:#347cdc;color:#fff;right:-1px;position:relative;}
 /*.navbar table td .Icon{display:block;width:20px;height:25px;margin:5px auto;}
 .navbar table td .ico-01{background-image: url(../img/ico_3.png);}
 .navbar table td .ico-02{width:24px;background-image: url(../img/ico_4.png);}
@@ -203,9 +215,9 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 /*明细记录列表*/
 .deta_list li{border:1px solid #ccc;border-width:1px 0;margin-top:-1px;background-color:#fff;position:relative;}
 .deta_list li .deta_in{height:40px;line-height:20px;padding:5px 20px;background-color:#fff;transition:0.3s;-webkit-transition:0.3s;position: relative;z-index:5;}
-.deta_list li .side_btn{width:109px;height:50px;border-bottom:1px solid #ccc;position:absolute;right:0;top:0;border-left:1px solid #d9d9d9;background-color:#4bae46;}
-.deta_list li.current .deta_in{margin-right:110px;transition:0.3s;-webkit-transition:0.3s;}
-.deta_list li .side_btn .Icon{width:48%;font-size:1.3rem;height:50px;line-height:50px;color:#fff;}
+.deta_list li .side_btn{width:50px;height:50px;border-bottom:1px solid #ccc;position:absolute;right:0;top:0;border-left:1px solid #d9d9d9;background-color:#4bae46;}
+.deta_list li.current .deta_in{margin-right:50px;transition:0.3s;-webkit-transition:0.3s;}
+.deta_list li .side_btn .Icon{width:100%;font-size:1.3rem;height:50px;line-height:50px;color:#fff;}
 .deta_list li .side_btn .Icon:first-child{background-color:#c2c1c5;}
 .plus{color:#53a000;}
 .minus{color:#eb6100;}
@@ -318,8 +330,8 @@ ul.contactBox li.word-title{background: none;border:0;padding-left: 10px;}
 .set_password li span{display:inline-block;width:60px;}
 .set_password li .list_in{border:0;padding-left:0;}
 
-
-
+.nodate{width:120px;position:absolute;top:32%;left:50%;margin-left:-60px;}
+.nodate img{width:100%;}
 
 
 

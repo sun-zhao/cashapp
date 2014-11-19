@@ -21,39 +21,45 @@
 	</header>
 	<!--header over-->
 	<!--检索菜单begin-->
-	<section class="navbar"><!--显示下拉菜单加show-->
+	<section class="navbar "><!--显示下拉菜单加show-->
 		<ul class="nav_list">
-			<li class="current">全部</li>
-			<li>进行中</li>
-			<li>未完成</li>
+			<li class="bg">全部<em></em></li>
+			<li>进行中<em></em></li>
+			<li>未完成<em></em></li>
 		</ul>
 		<table>
 			<tr>
 				<td>
-					<span>全部</span>
+					<span>全部<em></em></span>
 				</td>
 				<td>
-					<span>充值</span>
+					<span class="current">充值<em></em></span>
 				</td>
 				<td>
-					<span>提现</span>
+					<span>提现<em></em></span>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<span>购买</span>
+					<span>购买<em></em></span>
 				</td>
 				<td>
-					<span>收益</span>
+					<span>收益<em></em></span>
 				</td>
 				<td>
-					<span></span>
+					<span class="makesure">确定选择</span>
 				</td>
 			</tr>
 		</table>
 	</section>
 	<!--检索菜单over-->
 	<!--content begin-->
+	<!--无记录begin-->
+	<div class="nodate" style="display: none;">
+		<p class="aligncenter"><img src="../img/nodate-img.png"></p>
+		<p class="color-3 aligncenter font14">当前无账单记录</p>
+	</div>
+	<!--无记录over-->
 	<div class="content" id="wrapper" style="top:83px;">
 		<div id="scroller">
 			<div class="refresh aligncenter"><img src="../img/loading.gif" />下拉刷新...</div>
@@ -67,8 +73,7 @@
 						</p>
 					</div>
 					<div class="side_btn aligncenter">
-						<i class="Icon" title="撤销">驳回</i>
-						<i class="Icon" title="确认">通过</i>
+						<i class="Icon" title="撤销">撤回</i>
 					</div>
 				</li>
 				<li>
