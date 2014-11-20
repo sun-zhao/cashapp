@@ -124,7 +124,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .current .circle i{display: inline-block;transition:0.3s;-webkit-transition:0.3s;}
 .ico-new{width:10px;height:15px;background-image: url(../img/new.png);position: absolute;;left:2px;top:0;}
 .bill{width:100%;padding:5px 0;line-height:normal;background-size: 100% auto;color:#fff;background-repeat:no-repeat;position:relative;top:11px;font-size:11px;margin-left:-10px;box-shadow:0 0 3px #000;border-radius:2px;-webkit-border-radius:2px;}
-.loading{min-width:130px;height:30px;line-height:30px;background:url(../img/mask.png) repeat;position:fixed;left:50%;top:50%;margin:-15px 0 0 -65px;z-index:40;border-radius:4px;-webkit-border-radius:4px;color:#fff;}
+.loading{min-width:130px;height:30px;line-height:30px;background:url(../img/mask.png) repeat;position:fixed;left:50%;top:50%;margin:-15px 0 0 -65px;z-index:100;border-radius:4px;-webkit-border-radius:4px;color:#fff;}
 .loading img,.refresh img{vertical-align:-3px;margin:0 3px;}
 .refresh{margin:-25px 0 5px 0;}
 .mask,.maskOver{background-color:#000;opacity:0.5;position:fixed;top:0;left:0;bottom:0;right:0;z-index:50;display:none;}
