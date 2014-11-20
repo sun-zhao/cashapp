@@ -169,14 +169,14 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .Ex_list li em{color:#414c8e;padding-right:4px;}
 .Ex_int,.Input{height:44px;line-height:normal;border:1px;outline:none;width:60%;color:#888;font-size:13px;appearance:none;-webkit-appearance:none;}
 .Input{border:1px solid #c3c3c3;border-radius:3px;width:100%;text-indent:10px;color:#888;background:#fff;}
-.no_input{border-color:#fff;color:#ccc;}
+.no_input{border-color:#ccc;color:#aaa;background:#ddd;}
 .list_normal li{margin:-1px 0 0 0;}
 .list_normal li:first-child{border-radius:4px 4px 0 0;margin-top:9px;}
 .list_normal li:last-child{border-radius:0 0 4px 4px;}
 .list_normal li p{padding-left:13px;color:#999;line-height:30px;margin-top:-10px;}
 /*弹出*/
-.pop{position:absolute;top:105px;left:20px;right:20px;background:#fff;padding:15px;padding-bottom:0;z-index:300;border-radius:3px;box-shadow:0 0 5px #333;overflow: hidden;}
-.popIn{position:relative;}
+.pop{position:absolute;top:50%;margin-top:-50px;left:20px;right:20px;background:#fff;padding:15px;padding-bottom:0;z-index:300;border-radius:3px;box-shadow:0 0 5px #333;overflow: hidden;}
+.popIn{position:relative;height:100px;}
 .pop_btn{display:block;width:112%;border-top:1px solid #ddd;margin-top:15px;margin-left:-15px;font-size:14px;}
 .pop_btn li{display:block;float:left;height:40px;line-height:40px;width:50%;text-align: center;margin-left:-1px;}
 .pop_btn li:last-child{border-left:1px solid #ddd;width:50%;font-size:14px;color:#666;margin-left:0;}
