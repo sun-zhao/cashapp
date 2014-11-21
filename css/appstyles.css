@@ -334,7 +334,8 @@ ul.contactBox li.choosed{background:#fff url(../img/choosed.png) no-repeat 90% c
 
 .nodate{width:120px;position:absolute;top:32%;left:50%;margin-left:-60px;}
 .nodate img{width:100%;}
-
+.error{position:absolute;top:30%;}
+.error img{width:60%;}
 
 
 
