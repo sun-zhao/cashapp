@@ -336,12 +336,14 @@ ul.contactBox li.choosed{background:#fff url(../img/choosed.png) no-repeat 90% c
 .nodate img{width:100%;}
 .error{position:absolute;top:30%;}
 .error img{width:60%;}
-
-
-
-
-
-
+.tips{overflow:hidden;text-indent:0;}
+.font90 .tips{height:90px;}
+.font35 .tips{height:35px;}
+.font20 .tips{height:20px;}
+.tips{float:left;position:relative;}
+em.tips i{display:block;opacity:1;}
+em.refresh_tip i:nth-child(1){margin-top:-170%;transition:0.2s;-webkit-transition:0.2s;}
+.font20 em.refresh_tip i:nth-child(1){margin-top:-175%;}
 
 
 
