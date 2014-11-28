@@ -11,9 +11,83 @@
 	<script type="text/javascript" src="../js/iscroll.js"></script>
 	<script type="text/javascript" src="js/update.js" ></script>
 	<script type="text/javascript" src="../js/cash.js"></script>
+	<script type="text/javascript">  
+		var goldFallInterval;  
+		var goldFallStart=0;  
+		function initGoldFall(){  
+		    var length = $('div','#container').length;  
+		      
+		    if(length<4){  
+		        for(i=0;i<6;i++){  
+		         $('div','#container').clone().prependTo('#container');  
+		        }  
+		    }  
+		      
+		}  
+		function startGoldFall(){  
+		    clearInterval(goldFallInterval);  
+		    endCount = 0;  
+		    range();  
+		    goldFallStart = new Date().getTime();  
+		    goldFallInterval= setInterval(dropGoldFall,200);  
+		}  
+		  
+		//排列  
+		function range()  
+		{  
+		 var num = 1;  
+		 $('div','#container').each(function(i)  
+		 {  
+		  var ww = $(window).width();//窗口宽度  
+		  var wh = $(window).height();  
+		  
+		  var ot = -20;//从头部以上开始  
+		  
+		  $(this).css({"left":(i*(ww/64)) +"px","top":"-50px"});//距左距离保持，距上距离变化  
+		  num ++;  
+		 });  
+		}  
+		  
+		//降落  
+		function dropGoldFall()  
+		{  
+		    var now =  new Date().getTime();  
+		    if(now - goldFallStart >3000){  
+		          
+		        clearInterval(goldFallInterval);  
+		    }  
+		 var $objs =  $('div','#container');  
+		 $objs.each(function(i)  
+		 {  
+		  var wh   = $(window).height();  
+		  var ol   = $(this).offset().left;  
+		  var ot   = $(this).offset().top;  
+		  var rnd  = Math.round(Math.random()*100);  
+		  var rnd2 = Math.round(Math.random()*50);  
+		 //降落的速度  
+		  if(ot<=wh)//如果掉到窗口以下  
+		  {      
+		    $(this).css({"top":(ot+rnd+rnd2) +"px"});  
+		  }  
+		 });  
+		}  
+	  	var au = $('audio');
+		function fn(){  
+			au.click();
+		    initGoldFall();  
+		    startGoldFall();  
+		}  
+	</script> 
 </head>
 <body>
 <div class="view">
+	<!--<div id="container" style="z-index: 9999;position:absolute;">
+		<audio controls="controls">
+			<source src="../img/2.mp3"type="audio/mp3"/>
+		</audio>
+		<div style="position: absolute;"><img src="../img/gold.png"></div>
+	</div>
+	<input type=button onclick="fn();" value=test style="position:absolute;top:50px;left:20px;z-index:999000;padding:10px"> -->
 	<!--未注册尚不能登录begin-->
 	<div class="splash opening" style="display:none;">
 		<div class="nodate">
@@ -40,7 +114,7 @@
 	<header class="header clearfix">
 		<div class="TopL"><span class="Icon icon-set"></span></div>
 		<div class="TopM aligncenter"><span class="block font16">企业理财 </span></div>
-		<div class="TopR"><span class="block bill">账单</span></div>
+		<div class="TopR"><span class="block bill">账单<i class="dot"></i></span></div>
 	</header>
 	<!--header over-->
 	<!--content begin-->
@@ -49,11 +123,12 @@
 			<section class="Income">
 				<p class="font14">昨日收益（元）</p>
 				<p class="font90 clearfix">
-					<em class="tips refresh_tip"><i>3</i><i>4</i></em>
+					<em>1,928,0</em>
+					<!--<em class="tips refresh_tip"><i>3</i><i>4</i></em>
 					<em class="tips"><i>2</i><i>3</i></em>
 					<i class="tips">.</i>
 					<em class="tips"><i>7</i><i>8</i></em>
-					<em class="tips"><i>8</i><i>9</i></em>
+					<em class="tips"><i>8</i><i>9</i></em>-->
 				</p>
 			</section>
 			<section class="assets mart20 marl20 marr20">
